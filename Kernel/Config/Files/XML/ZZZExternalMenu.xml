@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<otrs_config version="2.0" init="Application">
+    <Setting Name="Frontend::Module###AgentExternalMenu" Required="1" Valid="1">
+        <Description Translatable="1">FrontendModuleRegistration for AgentExternalMenu module.</Description>
+        <Navigation>Frontend::Agent::ModuleRegistration</Navigation>
+        <Value>
+            <Item ValueType="FrontendRegistration">
+                <Hash>
+                    <Item Key="Group">
+                        <Array>
+                        </Array>
+                    </Item>
+                    <Item Key="GroupRo">
+                        <Array>
+                        </Array>
+                    </Item>
+                    <Item Key="Description" Translatable="1">Agent External Website.</Item>
+                    <Item Key="Title" Translatable="1">Agent External Website</Item>
+                    <Item Key="NavBarName">External Website</Item>
+                </Hash>
+            </Item>
+        </Value>
+    </Setting>
+    <Setting Name="Loader::Module::AgentExternalMenu###002-AgentExternalMenu" Required="0" Valid="1">
+        <Description Translatable="1">Loader module registration for the agent interface.</Description>
+        <Navigation>Frontend::Agent::ModuleRegistration::Loader</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="CSS">
+                    <Array>
+                    </Array>
+                </Item>
+                <Item Key="JavaScript">
+                    <Array>
+                    </Array>
+                </Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="Frontend::Navigation###AgentExternalMenu###002-AgentExternalMenu" Required="0" Valid="1">
+        <Description Translatable="1">Main menu item registration.</Description>
+        <Navigation>Frontend::Agent::ModuleRegistration::MainMenu</Navigation>
+        <Value>
+            <Array>
+                <DefaultItem ValueType="FrontendNavigation">
+                    <Hash>
+                    </Hash>
+                </DefaultItem>
+                <Item>
+                    <Hash>
+                        <Item Key="Group">
+                            <Array>
+                            </Array>
+                        </Item>
+                        <Item Key="GroupRo">
+                            <Array>
+                            </Array>
+                        </Item>
+                        <Item Key="Description" Translatable="1">Agent External Menu</Item>
+                        <Item Key="Name" Translatable="1">External Website</Item>
+                        <Item Key="Link">Action=NA</Item>
+                        <Item Key="LinkOption"></Item>
+                        <Item Key="NavBar">External Website</Item>
+                        <Item Key="Type">Menu</Item>
+                        <Item Key="Block">ItemArea</Item>
+                        <Item Key="AccessKey"></Item>
+                        <Item Key="Prio">10400</Item>
+                    </Hash>
+                </Item>
+                <Item>
+                    <Hash>
+                        <Item Key="Group">
+                            <Array>
+                            </Array>
+                        </Item>
+                        <Item Key="GroupRo">
+                            <Array>
+                            </Array>
+                        </Item>
+                        <Item Key="Description" Translatable="1">External Link to SSM</Item>
+                        <Item Key="Name" Translatable="1">Suruhanjaya Syarikat Malaysia</Item>
+                        <Item Key="Link">https://www.ssm.com.my/Pages/Home.aspx</Item>
+                        <Item Key="LinkOption">onclick="window.open('https://www.ssm.com.my/Pages/Home.aspx')"</Item>
+                        <Item Key="NavBar">External Website</Item>
+                        <Item Key="Type"></Item>
+                        <Item Key="Block">ItemArea</Item>
+                        <Item Key="AccessKey"></Item>
+                        <Item Key="Prio">10</Item>
+                    </Hash>
+                </Item>
+                <Item>
+                    <Hash>
+                        <Item Key="Group">
+                            <Array>
+                            </Array>
+                        </Item>
+                        <Item Key="GroupRo">
+                            <Array>
+                            </Array>
+                        </Item>
+                        <Item Key="Description" Translatable="1">External Link to LHDN</Item>
+                        <Item Key="Name" Translatable="1">Lembaga Hasil Dalam Negeri</Item>
+                        <Item Key="Link">http://www.hasil.gov.my/</Item>
+                        <Item Key="LinkOption">onclick="window.open('http://www.hasil.gov.my/')"</Item>
+                        <Item Key="NavBar">External Website</Item>
+                        <Item Key="Type"></Item>
+                        <Item Key="Block">ItemArea</Item>
+                        <Item Key="AccessKey"></Item>
+                        <Item Key="Prio">11</Item>
+                    </Hash>
+                </Item>
+                <Item>
+                    <Hash>
+                        <Item Key="Group">
+                            <Array>
+                            </Array>
+                        </Item>
+                        <Item Key="GroupRo">
+                            <Array>
+                            </Array>
+                        </Item>
+                        <Item Key="Description" Translatable="1">External Link to MyEG</Item>
+                        <Item Key="Name" Translatable="1">MyEG</Item>
+                        <Item Key="Link">https://www.myeg.com.my/</Item>
+                        <Item Key="LinkOption">onclick="window.open('https://www.myeg.com.my/')"</Item>
+                        <Item Key="NavBar">External Website</Item>
+                        <Item Key="Type"></Item>
+                        <Item Key="Block">ItemArea</Item>
+                        <Item Key="AccessKey"></Item>
+                        <Item Key="Prio">12</Item>
+                    </Hash>
+                </Item>
+            </Array>
+        </Value>
+    </Setting>
+</otrs_config>
